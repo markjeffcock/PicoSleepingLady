@@ -1,0 +1,5 @@
+Pico Device OS 5.7.2
+Unity - 2021.3.21
+        3d (URP) template
+Unity XR Integration toolkit - 2.5.1
+Pico Unity Integration - 2.3.4
