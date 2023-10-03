@@ -8,4 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SleepingLadyofMalta.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.PXR.Settings: {fileID: 11400000, guid: a9e121d75da115b40adc5137be6d3f27,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d9d26b251e6095c44b37f3348383525c,
+      type: 2}
