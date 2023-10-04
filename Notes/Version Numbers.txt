@@ -3,3 +3,12 @@ Unity - 2021.3.21
         3d (URP) template
 Unity XR Integration toolkit - 2.5.1
 Pico Unity Integration - 2.3.4
+
+Do I need to supply Github link?
+
+Video commentary:
+
+Educational
+Small objects
+Scale-up
++ ability to pickup
