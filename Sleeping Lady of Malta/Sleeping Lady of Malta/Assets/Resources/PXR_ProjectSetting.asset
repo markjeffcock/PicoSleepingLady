@@ -27,4 +27,4 @@ MonoBehaviour:
   adaptiveResolution: 0
   stageMode: 1
   videoSeeThrough: 1
-  spatialAnchor: 0
+  spatialAnchor: 1
