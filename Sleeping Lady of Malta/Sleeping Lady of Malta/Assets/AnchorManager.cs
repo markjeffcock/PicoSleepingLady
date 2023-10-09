@@ -22,10 +22,11 @@ public class AnchorManager : MonoBehaviour
 
     private Dictionary<ulong, GameObject> anchorMap = new Dictionary<ulong, GameObject>();
 
-    // Start is called before the first frame update
+    // Start is called before the first frame update,
+    // set anchor preview off
     void Start()
     {
-
+        anchorPreview.SetActive(false);
     }
 
     // Update is called once per frame
