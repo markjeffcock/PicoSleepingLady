@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.XR.PXR;
+using System.IO;
+using UnityEditor;
+using Debug = UnityEngine.Debug;
 
 public class SensePackMR : MonoBehaviour
 {
