@@ -36,12 +36,16 @@ public class AnchorManager : MonoBehaviour
 
     private void OnEnable()
     {
-
+        rightTrigger.action.started += onRightTriggerPressed;
+        rightTrigger.action.canceled += onRightTriggerReleased;
+        PXR_Manager.AnchorEntityCreated += AnchorEntityCreated;
     }
 
     private void OnDisable()
     {
-
+        rightTrigger.action.started -= onRightTriggerPressed;
+        rightTrigger.action.canceled -= onRightTriggerReleased;
+        PXR_Manager.AnchorEntityCreated -= AnchorEntityCreated;
     }
 
     private void FixedUpdate()
