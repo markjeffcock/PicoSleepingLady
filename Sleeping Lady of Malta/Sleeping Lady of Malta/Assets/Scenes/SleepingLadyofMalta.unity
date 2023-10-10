@@ -208,7 +208,7 @@ PrefabInstance:
     - target: {fileID: 5606698050494069030, guid: 57c2f685191168a4fb05a1ee48501edc,
         type: 3}
       propertyPath: m_Name
-      value: Theory Photo
+      value: Frame Prefab
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57c2f685191168a4fb05a1ee48501edc, type: 3}
@@ -1170,16 +1170,61 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1114724071}
+    - target: {fileID: 1035368758144064424, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 773190232}
+    - target: {fileID: 1035368758144064424, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_changedPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1035368758144064424, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: AnchorManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1257366215442381249, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1114724071}
+    - target: {fileID: 1257366215442381249, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 773190232}
+    - target: {fileID: 1257366215442381249, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_changedPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257366215442381249, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: AnchorManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4060421435359085658, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
         type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1114724071}
     - target: {fileID: 4060421435359085658, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
         type: 3}
-      propertyPath: m_InteractionManager
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1114724071}
+      objectReference: {fileID: 773190232}
+    - target: {fileID: 4060421435359085658, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_changedPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 4060421435359085658, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: AnchorManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4852686617023752301, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
         type: 3}
       propertyPath: m_MovementType
@@ -1192,19 +1237,55 @@ PrefabInstance:
       objectReference: {fileID: 1114724071}
     - target: {fileID: 5103626151149964086, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
         type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103626151149964086, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 655722021}
+      objectReference: {fileID: 773190232}
     - target: {fileID: 5103626151149964086, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_changedPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103626151149964086, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AnchorManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103626151149964086, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
+      objectReference: {fileID: 5606698050494069030, guid: 7397a5d2bd94f334d82d7b509298965f,
+        type: 3}
+    - target: {fileID: 5103626151149964086, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7281767944255708651, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
         type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1114724071}
+    - target: {fileID: 7281767944255708651, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 773190232}
+    - target: {fileID: 7281767944255708651, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_changedPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 7281767944255708651, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
+        type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: AnchorManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 8121205307926875876, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
         type: 3}
       propertyPath: m_RootOrder
@@ -1448,7 +1529,7 @@ MonoBehaviour:
   rightTrigger: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
   anchorPreview: {fileID: 195574954}
-  anchorPrefab: {fileID: 5606698050494069030, guid: 57c2f685191168a4fb05a1ee48501edc,
+  anchorPrefab: {fileID: 5606698050494069030, guid: 7397a5d2bd94f334d82d7b509298965f,
     type: 3}
   maxDriftDelay: 0.5
 --- !u!1 &810054612

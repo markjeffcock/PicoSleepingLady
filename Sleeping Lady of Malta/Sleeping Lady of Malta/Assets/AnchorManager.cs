@@ -14,11 +14,18 @@ public class AnchorManager : MonoBehaviour
     [SerializeField]
     private GameObject anchorPreview;
     [SerializeField]
-    private GameObject anchorPrefab;
+    public GameObject anchorPrefab;
     [SerializeField]
     private float maxDriftDelay = 0.5f;
 
     private float currDriftDelay = 0f;
+
+  
+    public GameObject changedPrefab
+    {
+        get => anchorPrefab;
+        set => anchorPrefab = value;
+    }
 
     private Dictionary<ulong, GameObject> anchorMap = new Dictionary<ulong, GameObject>();
 
