@@ -12,7 +12,11 @@ public class AnchorManager : MonoBehaviour
     [SerializeField]
     private InputActionReference rightTrigger;
     [SerializeField]
-    private GameObject anchorPreview;
+    private InputActionReference leftTrigger;
+    [SerializeField]
+    private GameObject rightAnchorPreview;
+    [SerializeField]
+    private GameObject leftAnchorPreview;
     [SerializeField]
     public GameObject anchorPrefab;
     [SerializeField]
@@ -33,7 +37,8 @@ public class AnchorManager : MonoBehaviour
     // set anchor preview off
     void Start()
     {
-        anchorPreview.SetActive(false);
+        rightAnchorPreview.SetActive(false);
+        leftAnchorPreview.SetActive(false);
     }
 
     // Update is called once per frame
@@ -46,6 +51,8 @@ public class AnchorManager : MonoBehaviour
     {
         rightTrigger.action.started += onRightTriggerPressed;
         rightTrigger.action.canceled += onRightTriggerReleased;
+        leftTrigger.action.started += onLeftTriggerPressed;
+        leftTrigger.action.canceled += onLeftTriggerReleased;
         PXR_Manager.AnchorEntityCreated += AnchorEntityCreated;
     }
 
@@ -53,6 +60,8 @@ public class AnchorManager : MonoBehaviour
     {
         rightTrigger.action.started -= onRightTriggerPressed;
         rightTrigger.action.canceled -= onRightTriggerReleased;
+        leftTrigger.action.started -= onLeftTriggerPressed;
+        leftTrigger.action.canceled -= onLeftTriggerReleased;
         PXR_Manager.AnchorEntityCreated -= AnchorEntityCreated;
     }
 
@@ -63,30 +72,55 @@ public class AnchorManager : MonoBehaviour
 
     private void onRightTriggerPressed(InputAction.CallbackContext callback)
     {
-        ShowAnchorPreview();
+        RightShowAnchorPreview();
     }
 
     private void onRightTriggerReleased(InputAction.CallbackContext callback)
     {
-        CreateAnchor();
+        RightCreateAnchor();
     }
 
-    // Instantiate a Preview
-    private void ShowAnchorPreview()
+    private void onLeftTriggerPressed(InputAction.CallbackContext callback)
     {
-        anchorPreview.SetActive(true);
+        LeftShowAnchorPreview();
     }
 
-    // Create an the Anchor
-    private void CreateAnchor()
+    private void onLeftTriggerReleased(InputAction.CallbackContext callback)
+    {
+        LeftCreateAnchor();
+    }
+
+    // Instantiate a Preview - Right
+    private void RightShowAnchorPreview()
+    {
+        rightAnchorPreview.SetActive(true);
+    }
+
+    // Instantiate a Preview - Left
+    private void LeftShowAnchorPreview()
+    {
+        leftAnchorPreview.SetActive(true);
+    }
+
+    // Create an the Anchor - Right
+    private void RightCreateAnchor()
     {
         //hide anchor
-        anchorPreview.SetActive(false);
+        rightAnchorPreview.SetActive(false);
         // trigger Event
-        PXR_MixedReality.CreateAnchorEntity(anchorPreview.transform.position, anchorPreview.transform.rotation, out ulong taskID);
+        PXR_MixedReality.CreateAnchorEntity(rightAnchorPreview.transform.position, rightAnchorPreview.transform.rotation, out ulong taskID);
     }
 
-    // Instatiate the Anchor Prefab
+    // Create an the Anchor - Left
+    private void LeftCreateAnchor()
+    {
+        //hide anchor
+        leftAnchorPreview.SetActive(false);
+        // trigger Event
+        PXR_MixedReality.CreateAnchorEntity(leftAnchorPreview.transform.position, leftAnchorPreview.transform.rotation, out ulong taskID);
+    }
+
+    // Instantiate the Anchor Prefab
     private void AnchorEntityCreated(PxrEventAnchorEntityCreated result)
     {
         if(result.result == PxrResult.SUCCESS)

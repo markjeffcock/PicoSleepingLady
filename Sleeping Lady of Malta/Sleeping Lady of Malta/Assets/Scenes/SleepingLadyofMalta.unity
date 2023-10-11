@@ -1528,7 +1528,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rightTrigger: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
-  anchorPreview: {fileID: 195574954}
+  leftTrigger: {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f,
+    type: 3}
+  rightAnchorPreview: {fileID: 195574954}
+  leftAnchorPreview: {fileID: 1887534473}
   anchorPrefab: {fileID: 5606698050494069030, guid: 7397a5d2bd94f334d82d7b509298965f,
     type: 3}
   maxDriftDelay: 0.5
@@ -2524,14 +2527,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1136323898}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8242afb3bd6a2b84a83158fcf38b3525, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rightTrigger: {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
-  anchorPreview: {fileID: 1887534473}
+  leftTrigger: {fileID: 0}
+  rightAnchorPreview: {fileID: 0}
+  leftAnchorPreview: {fileID: 0}
   anchorPrefab: {fileID: 5606698050494069030, guid: 7397a5d2bd94f334d82d7b509298965f,
     type: 3}
   maxDriftDelay: 0.5
