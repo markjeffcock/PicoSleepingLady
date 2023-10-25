@@ -1793,6 +1793,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5103626151149964086, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
         type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: 38334eaa7e839014a842880b9023ce1a, type: 3}
+    - target: {fileID: 5103626151149964086, guid: 9d19b2dd347174c4490ccdc6f97f6eec,
+        type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 5606698050494069030, guid: 7397a5d2bd94f334d82d7b509298965f,
